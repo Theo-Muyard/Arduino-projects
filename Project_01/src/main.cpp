@@ -5,9 +5,10 @@
 #define RED_LED 2
 #define SWITCH 5
 
-int  switchState;
+int	switchState;
 
-void setup() {
+void setup() 
+{
 	switchState = 0;
 	pinMode(GREEN_LED, OUTPUT);
 	pinMode(YELLOW_LED, OUTPUT);
@@ -15,7 +16,8 @@ void setup() {
 	pinMode(SWITCH, INPUT);
 }
 
-void loop() {
+void loop()
+{
 	switchState = digitalRead(SWITCH);
 	if (switchState == LOW)
 	{
